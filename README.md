@@ -15,7 +15,7 @@ The framework operates in two phases: (1) **​Self-sampling**​ generates dive
 Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on MuSiQue (LLaMA/Qwen) and cross-task robustness, outperforming outcome supervision. The results validate process supervision as pivotal for scalable long-context reasoning, with open-source code enabling community adoption.
 
 ![](pics/combined_plot.png)
-
+***
 | ​**Model**​            | ​**Short**​ | ​**Medium**​ | ​**Long**​ |
 | :-------: | :--------------------: | :--------------------: | :------------------: |
 | LLaMA3.1-70B-Instruct | +2.0      | +9.9       | +9.0     |
