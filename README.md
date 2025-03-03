@@ -29,9 +29,11 @@ Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on
 - [⚙️ How to Prepare Data for Training](#how-to-Prepare-Data-for-Training)
 - [🖥️ How to Prepare Data for Evaluating](#how-to-Prepare-Data-for-Evaluating)
 - [🍧 Training](#training)
+- [📊 Evaluation](#evaluation)
 - [📄 Acknowledgement](#acknowledgement)
 
 <a name="how-to-Prepare-Data-for-Training"></a>
+
 ## ⚙️ How to Prepare Data for Training
 
 **Llama-3.1-8B**:
@@ -80,12 +82,15 @@ python preprocess_train.py
 ```
 
 <a name="how-to-Prepare-Data-for-Evaluating"></a>
+
 ## 🖥️ How to Prepare Data for Evaluating
 
 ```bash
 bash scripts/preprocess_lb.sh
 ```
 Then you will obtain the processed evaluation data in the **dataset** directory.
+
+<a name="training"></a>
 
 ## 🍧 Training
 
@@ -148,6 +153,7 @@ bash scripts/llama_sft.sh
 bash scripts/qwen_sft.sh
 ```
 
+<a name="evaluation"></a>
 
 ## 📊 Evaluation
 
@@ -165,6 +171,7 @@ bash launch_lbv2.sh
 
 Note: Set **model_path** and **mode** to the desired target model.
 
+<a name="acknowledgement"></a>
 
 ## 📄 Acknowledgement
 We are deeply thankful for the following projects that serve as the foundation for LongRePS:
