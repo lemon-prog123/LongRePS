@@ -25,6 +25,13 @@ Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on
 | GPT-4o-mini          | +4.0      | +1.3       | +6.2     |
 | ​Avg.​             | +2.0      | +6.2       | +5.8     |
 
+## 🔍 List of Contents
+- [⚙️ How to Prepare Data for Training](#how-to-Prepare-Data-for-Training)
+- [🖥️ How to Prepare Data for Evaluating](#how-to-Prepare-Data-for-Evaluating)
+- [🍧 Training](#training)
+- [📄 Acknowledgement](#acknowledgement)
+
+<a name="how-to-Prepare-Data-for-Training"></a>
 ## ⚙️ How to Prepare Data for Training
 
 **Llama-3.1-8B**:
@@ -72,6 +79,7 @@ Or you can simply run [preprocess.py](preprocess.py)
 python preprocess_train.py
 ```
 
+<a name="how-to-Prepare-Data-for-Evaluating"></a>
 ## 🖥️ How to Prepare Data for Evaluating
 
 ```bash
