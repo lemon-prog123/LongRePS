@@ -32,7 +32,7 @@ def construct_cot_nocot_split(split: str):
         new_nocot_data_list.append({"id": id,"question":question,"instruction": instruction_nocot, "answers": answers, "all_classes":all_classes,"output": output, "system": "You are a helpful assistant."})
     print(f"size of {split} new_cot_data_list: {len(new_cot_data_list)}")
     print(f"size of {split} new_nocot_data_list: {len(new_nocot_data_list)}")
-    with jsonlines.open(f"/dataset/longbenchv1/{split}_cot.jsonl", 'w') as writer:
+    with jsonlines.open(f"dataset/longbenchv1/{split}_cot.jsonl", 'w') as writer:
         writer.write_all(new_cot_data_list)
     with jsonlines.open(f"dataset/longbenchv1/{split}_nocot.jsonl", 'w') as writer:
         writer.write_all(new_nocot_data_list)

@@ -1,4 +1,4 @@
-model_path="meta-llama/Llama-3.1-8B"
+model_path="../Model/meta-llama/Llama-3.1-8B"
 template="llama3"
 learning_rate=1e-5
 dataset="Llama-3.1-8B_warmup"
