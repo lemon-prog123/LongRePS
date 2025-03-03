@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="llama.png" width="150" style="margin-bottom: 0.2;"/>
+    <img src="pics/llama.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
 
 # 📖 Chain-of-Thought Matters: Improving Long-Context Language Models with Reasoning Path Supervision
@@ -8,6 +8,22 @@
     🤗 <a href="https://huggingface.co/collections/Lemon123prog/longreps-67c54f91b940623729f7ba9e" target="_blank">HF Repo</a> • 📃 <a href="https://arxiv.org/pdf/2502.20790" target="_blank">Paper</a>
 </p>
 
+**LongRePS** tackles quality bottlenecks in CoT reasoning for extended contexts by integrating process supervision. As shown in the figure, we have discovered that in complex task scenarios, using the chain of thought always enables the model performance to achieve a universal gain. Furthermore, we figure out that while vanilla CoT improves with context length, self-sampled reasoning paths exhibit significant inconsistency and hallucination risks, especially in multi-hop QA and complex scenarios.
+
+The framework operates in two phases: (1) **​Self-sampling**​ generates diverse CoT candidates to capture reasoning variability, and (2) **​Context-aware assessment**​ enforces answer correctness, grounding via text matching, and intrinsic consistency via LLM-based scoring.
+
+Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on MuSiQue (LLaMA/Qwen) and cross-task robustness, outperforming outcome supervision. The results validate process supervision as pivotal for scalable long-context reasoning, with open-source code enabling community adoption.
+
+![](pics/combined_plot.png)
+
+| ​**Model**​            | ​**Short**​ | ​**Medium**​ | ​**Long**​ |
+|----------------------|----------:|-----------:|---------:|
+| LLaMA3.1-70B-Instruct | +2.0      | +9.9       | +9.0     |
+| Qwen2.5-72B-Instruct  | +1.0      | +5.0       | +6.7     |
+| Claude-3.5-Sonnet     | +3.5      | +9.3       | +1.6     |
+| GPT-4o               | -0.5      | +5.5       | +5.7     |
+| GPT-4o-mini          | +4.0      | +1.3       | +6.2     |
+| ​Avg.​             | +2.0      | +6.2       | +5.8     |
 
 ## ⚙️ How to Prepare Data for Training
 
