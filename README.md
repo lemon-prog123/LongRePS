@@ -17,7 +17,7 @@ Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on
 ![](pics/combined_plot.png)
 
 | ​**Model**​            | ​**Short**​ | ​**Medium**​ | ​**Long**​ |
-|----------------------|----------:|-----------:|---------:|
+| :-------: | :--------------------: | :--------------------: | :------------------: |
 | LLaMA3.1-70B-Instruct | +2.0      | +9.9       | +9.0     |
 | Qwen2.5-72B-Instruct  | +1.0      | +5.0       | +6.7     |
 | Claude-3.5-Sonnet     | +3.5      | +9.3       | +1.6     |
