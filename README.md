@@ -18,28 +18,36 @@ Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on
 ***
 ![](pics/combined_plot.png)
 ***
+![](pics/main_table.png)
 
-| Model                      | MuSiQue | HPQA  | MFQA  | Qasper | 2WMQA | SQA  | MQA  | Avg.  |
-|----------------------------|--------:|------:|------:|-------:|------:|-----:|-----:|------:|
-| ​LLaMA-3.1-8B-Instruct​  | 45.3    | 57.3  | 53.8  | 42.9   | 64.0  | 29.3 | 32.2 | 46.4  |
-| _Base Model_                | 12.6    | 21.2  | 29.9  | 13.4   | 19.9  | 1.2  | 1.7  | 14.3  |
-| with ORM      | 47.0    | 50.0  | 44.4  | 32.1   | 37.1  | 17.1 | 14.8 | 34.7  |
-| **with ​LongRePS**​             | **60.6**    | **57.9**  | **53.8**  | **36.0**   | **50.5**  | **28.1** | **31.3** | **44.0**  |
-|                            | (+13.6↑)| (+7.9↑)|(+9.4↑)|(+3.9↑)|(+13.4↑)|(+11.0↑)|(+16.5↑)|(+9.3↑)|
-| ​Qwen-2.5-7B-Instruct​   | 39.4    | 57.5  | 48.7  | 43.0   | 54.2  | 34.2 | 33.0 | 44.3  |
-| _Base Model_                | 23.8    | 43.8  | 46.2  | 29.9   | 28.2  | 30.5 | 32.2 | 33.5  |
-| with ORM     | 49.2    | 58.1  | 43.2  | 29.7   | 41.2  | 20.7 | 17.4 | 37.1  |
-| **with ​LongRePS**​             | **53.0**    | 57.0  | **45.6**  | **38.4**   | **58.1**  | **30.5** | **33.9** | **45.2**  |
-|                            | (+3.8↑) |(-1.1↓)|(+2.4↑)|(+8.7↑)|(+16.9↑)|(+9.8↑)|(+16.5↑)|(+8.1↑)|
-| ​GPT-4o-mini​            | 46.3    | 56.1  | 50.2  | 38.7   | 64.0  | 34.2 | 34.2 | 46.2  |
-| ​GPT-4o                 | 55.8    | 65.8  | 54.8  | 45.4   | 74.8  | 46.0 | 47.2 | 55.7  |
 
 ## 🔍 List of Contents
+- [🔨 Requirements](#requirements)
 - [⚙️ How to Prepare Data for Training](#how-to-Prepare-Data-for-Training)
 - [🖥️ How to Prepare Data for Evaluating](#how-to-Prepare-Data-for-Evaluating)
 - [🍧 Training](#training)
 - [📊 Evaluation](#evaluation)
 - [📄 Acknowledgement](#acknowledgement)
+
+<a name="requirements"></a>
+
+## 🔨 Requirements
+
+**Install LLaMA-Factory**
+
+Please refer to this tutorial for [installation](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/installation.html).
+Or you can use following command:
+```bash
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]"
+```
+
+**Install Other Supporting Libraries**
+
+```bash
+pip install -r requirements.txt
+```
 
 <a name="how-to-Prepare-Data-for-Training"></a>
 
