@@ -21,6 +21,9 @@ Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on
 ![](pics/main_table.png)
 
 
+## 🔥 News
+**[2025/03/03]** Release training and evaluation data for **LongRePS**. The model parameters and complete codes will be available soon.
+
 ## 🔍 List of Contents
 - [🔨 Requirements](#requirements)
 - [⚙️ How to Prepare Data for Training](#how-to-Prepare-Data-for-Training)
