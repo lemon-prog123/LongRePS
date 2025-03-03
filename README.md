@@ -158,4 +158,10 @@ bash launch_lbv2.sh
 Note: Set **model_path** and **mode** to the desired target model.
 
 
-## 👍 Acknowledgement
+## 📄 Acknowledgement
+We are deeply thankful for the following projects that serve as the foundation for LongRePS:
+
+* [**SEALONG**](https://github.com/SihengLi99/SEALONG)
+* [**LongBench**](https://github.com/THUDM/LongBench)
+* [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory)
+
