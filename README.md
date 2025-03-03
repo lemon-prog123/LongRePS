@@ -7,30 +7,32 @@
 <p align="center">
     🤗 <a href="https://huggingface.co/collections/Lemon123prog/longreps-67c54f91b940623729f7ba9e" target="_blank">HF Repo</a> • 📃 <a href="https://arxiv.org/pdf/2502.20790" target="_blank">Paper</a>
 </p>
+
 **LongRePS** tackles quality bottlenecks in CoT reasoning for extended contexts by integrating process supervision. As shown in the figure, we have discovered that in complex task scenarios, using the chain of thought always enables the model performance to achieve a universal gain. Furthermore, we figure out that while vanilla CoT improves with context length, self-sampled reasoning paths exhibit significant inconsistency and hallucination risks, especially in multi-hop QA and complex scenarios.
 
+
 The framework operates in two phases: (1) **​Self-sampling**​ generates diverse CoT candidates to capture reasoning variability, and (2) **​Context-aware assessment**​ enforces answer correctness, grounding via text matching, and intrinsic consistency via LLM-based scoring.
+
 
 Evaluations on long-context tasks show LongRePS achieves 13.6/3.8-point gains on MuSiQue (LLaMA/Qwen) and cross-task robustness, outperforming outcome supervision. The results validate process supervision as pivotal for scalable long-context reasoning, with open-source code enabling community adoption.
 ***
 ![](pics/combined_plot.png)
 ***
-| ​**Model**​               | ​**MuSiQue**​ | ​**QAs-LBV1**​           |                |           |          | ​**QAs-LBV2**​ |          | ​**Avg.**​ |
-|-------------------------|------------:|------------------------|----------------|-----------|----------|--------------|----------|---------:|
-|                         |             | ​**HPQA**​               | ​**MFQA**​       | ​**Qasper**| ​**2WMQA**| ​**SQA**​      | ​**MQA**​  |          |
-|-------------------------|-------------|------------------------|----------------|-----------|----------|--------------|----------|---------:|
-| ​**LLaMA-3.1-8B-Instruct**​ | 45.3        | 57.3                   | 53.8           | 42.9      | 64.0     | 29.3         | 32.2     | 46.4     |
-| _LLaMA-3.1-8B-Base_       | 12.6        | 21.2                   | 29.9           | 13.4      | 19.9     | 1.2          | 1.7      | 14.3     |
-| ↳ w/ Outcome Supervision | 47.0        | 50.0                   | 44.4           | 32.1      | 37.1     | 17.1         | 14.8     | 34.7     |
-| ↳ ​**w/ LongRePS**​         | ​**60.6**<br>(+13.6↑) | ​**57.9**<br>(+7.9↑) | ​**53.8**<br>(+9.4↑) | ​**36.0**<br>(+3.9↑) | ​**50.5**<br>(+13.4↑) | ​**28.1**<br>(+11.0↑) | ​**31.3**<br>(+16.5↑) | ​**44.0**<br>(+9.3↑) |
-|-------------------------|-------------|------------------------|----------------|-----------|----------|--------------|----------|---------:|
-| ​**Qwen-2.5-7B-Instruct**​  | 39.4        | 57.5                   | 48.7           | 43.0      | 54.2     | 34.2         | 33.0     | 44.3     |
-| _Qwen-2.5-7B-Base_        | 23.8        | 43.8                   | 46.2           | 29.9      | 28.2     | 30.5         | 32.2     | 33.5     |
-| ↳ w/ Outcome Supervision | 49.2        | 58.1                   | 43.2           | 29.7      | 41.2     | 20.7         | 17.4     | 37.1     |
-| ↳ ​**w/ LongRePS**​         | ​**53.0**<br>(+3.8↑) | 57.0<br>(-1.1↓)     | ​**45.6**<br>(+2.4↑) | ​**38.4**<br>(+8.7↑) | ​**58.1**<br>(+16.9↑) | ​**30.5**<br>(+9.8↑) | ​**33.9**<br>(+16.5↑) | ​**45.2**<br>(+8.1↑) |
-|-------------------------|-------------|------------------------|----------------|-----------|----------|--------------|----------|---------:|
-| GPT-4o-mini              | 46.3        | 56.1                   | 50.2           | 38.7      | 64.0     | 34.2         | 34.2     | 46.2     |
-| GPT-4o                   | 55.8        | 65.8                   | 54.8           | 45.4      | 74.8     | 46.0         | 47.2     | 55.7     |
+
+| Model                      | MuSiQue | HPQA  | MFQA  | Qasper | 2WMQA | SQA  | MQA  | Avg.  |
+|----------------------------|--------:|------:|------:|-------:|------:|-----:|-----:|------:|
+| ​LLaMA-3.1-8B-Instruct​  | 45.3    | 57.3  | 53.8  | 42.9   | 64.0  | 29.3 | 32.2 | 46.4  |
+| _Base Model_                | 12.6    | 21.2  | 29.9  | 13.4   | 19.9  | 1.2  | 1.7  | 14.3  |
+| → Outcome Supervision      | 47.0    | 50.0  | 44.4  | 32.1   | 37.1  | 17.1 | 14.8 | 34.7  |
+| → ​**LongRePS**​             | 60.6    | 57.9  | 53.8  | 36.0   | 50.5  | 28.1 | 31.3 | 44.0  |
+|                            | (+13.6↑)| (+7.9↑)|(+9.4↑)|(+3.9↑)|(+13.4↑)|(+11.0↑)|(+16.5↑)|(+9.3↑)|
+| ​Qwen-2.5-7B-Instruct​   | 39.4    | 57.5  | 48.7  | 43.0   | 54.2  | 34.2 | 33.0 | 44.3  |
+| _Base Model_                | 23.8    | 43.8  | 46.2  | 29.9   | 28.2  | 30.5 | 32.2 | 33.5  |
+| → Outcome Supervision      | 49.2    | 58.1  | 43.2  | 29.7   | 41.2  | 20.7 | 17.4 | 37.1  |
+| → ​**LongRePS**​             | 53.0    | 57.0  | 45.6  | 38.4   | 58.1  | 30.5 | 33.9 | 45.2  |
+|                            | (+3.8↑) |(-1.1↓)|(+2.4↑)|(+8.7↑)|(+16.9↑)|(+9.8↑)|(+16.5↑)|(+8.1↑)|
+| ​**GPT-4o-mini**​            | 46.3    | 56.1  | 50.2  | 38.7   | 64.0  | 34.2 | 34.2 | 46.2  |
+| ​**GPT-4o**​                 | 55.8    | 65.8  | 54.8  | 45.4   | 74.8  | 46.0 | 47.2 | 55.7  |
 
 ## 🔍 List of Contents
 - [⚙️ How to Prepare Data for Training](#how-to-Prepare-Data-for-Training)
