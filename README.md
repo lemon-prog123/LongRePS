@@ -2,8 +2,7 @@
     <img src="llama.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
 
-<h3 align="center"><a href="https://arxiv.org/pdf/2502.20790">
-Chain-of-Thought Matters: Improving Long-Context Language Models with Reasoning Path Supervision</a></h3>
+# 📖 Chain-of-Thought Matters: Improving Long-Context Language Models with Reasoning Path Supervision
 
 <p align="center">
     🤗 <a href="https://huggingface.co/collections/Lemon123prog/longreps-67c54f91b940623729f7ba9e" target="_blank">HF Repo</a> • 📃 <a href="https://arxiv.org/pdf/2502.20790" target="_blank">Paper</a>
