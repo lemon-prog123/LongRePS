@@ -49,6 +49,9 @@ pip install -e ".[torch,metrics]"
 **Install Other Supporting Libraries**
 
 ```bash
+cd ..
+git clone https://github.com/lemon-prog123/LongRePS.git
+cd LongRePS
 pip install -r requirements.txt
 ```
 
