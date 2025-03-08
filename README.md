@@ -196,6 +196,15 @@ Note: Set **model_path** and **mode** to the desired target model.
 
 <a name="acknowledgement"></a>
 
+## 📝 Citation
+```
+@article{zhu2025chain,
+  title={Chain-of-Thought Matters: Improving Long-Context Language Models with Reasoning Path Supervision},
+  author={Zhu, Dawei and Wei, Xiyu and Zhao, Guangxiang and Wu, Wenhao and Zou, Haosheng and Ran, Junfeng and Wang, Xun and Sun, Lin and Zhang, Xiangzheng and Li, Sujian},
+  journal={arXiv preprint arXiv:2502.20790},
+  year={2025}
+}
+```
 ## 📄 Acknowledgement
 We are deeply thankful for the following projects that serve as the foundation for LongRePS:
 
