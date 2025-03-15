@@ -180,7 +180,7 @@ def get_score_evidence(question:str, pred:str,ground_truth:str) -> Tuple[float, 
     prompt = EVAL_PROMPT.format(question=question, reasoning=pred)
     max_retries = 5
     API_KEY = os.getenv("OPENAI_API_KEY")
-    client = OpenAI(api_key=API_KEY,base_url="https://api.360.cn/v1")
+    client = OpenAI(api_key=API_KEY,base_url="")
     for _ in range(max_retries):
         content = ""
         try:
