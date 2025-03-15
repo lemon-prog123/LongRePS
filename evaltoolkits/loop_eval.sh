@@ -1,5 +1,5 @@
 eval_model_list=(
-    #"[Your Model Name] [Your Model Path] [Evaluate File Name]"
+    "Llama-8B-warmup-lr1e-5-epoch1 ../saves/Llama3.1-8B/full/Llama-3.1-8B_warmup_train_lr1e-5_maxlen16k_2025-03-13-22-43-49/checkpoint-10 "
 )
 model_list=("${eval_model_list[@]}")
 

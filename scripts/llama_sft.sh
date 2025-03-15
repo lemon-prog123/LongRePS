@@ -1,7 +1,7 @@
-model_path="Your Warm-up Model Path"
+model_path="/mnt/xiyu/LongRePS/saves/Llama3.1-8B/full/Llama-3.1-8B_warmup_train_lr1e-5_maxlen16k_2025-03-13-22-43-49/checkpoint-10"
 template="llama3"
 learning_rate=5e-6
-dataset="Llama-3.1-8B_sft"
+dataset="Llama-3.1-8B_orm"
 echo "Dataname: ${dataset}"
 
 output_path="saves/Llama3.1-8B/full/${dataset}_train_lr${learning_rate}_maxlen16k_"$(date -d "+8 hours" +"%Y-%m-%d-%H-%M-%S")

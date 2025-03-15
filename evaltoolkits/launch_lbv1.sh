@@ -1,14 +1,14 @@
 
-model_name="Your Model Name"
-model_path="Your Model Path"
+model_name="Llama-8B-sft-lr5e-6-sample30-temp0.7-thresh1.0-epoch1"
+model_path="../saves/Llama3.1-8B/full/Llama-3.1-8B_sample30_thresh1.0_prm_train_lr5e-6_maxlen16k_2025-03-14-19-09-15/checkpoint-61"
 mode="cot"
 
 domain_list=("all")
 eval_data_dir="../dataset/longbenchv1"
-sample_num=100
-temperature=0.7
+sample_num=1
+temperature=0.0
 
-cp meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Models
+cp /mnt/xiyu/Model/meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Models
 #cp Qwen/Qwen2.5-7B-Instruct/tokenizer* ${model_path}
 
 
@@ -24,7 +24,7 @@ sleep 30 # sleep 30s, wait for the servers to start
 
 
 for domain in "${domain_list[@]}"; do
-    file_name_list=("musique_${mode}.jsonl" "hotpotqa_${mode}.jsonl" "multifieldqa_${mode}.jsonl" "qasper_${mode}.jsonl" "2wikimqa_${mode}.jsonl")
+    file_name_list=("multifieldqa_en_${mode}.jsonl") #("musique_${mode}.jsonl" "hotpotqa_${mode}.jsonl" "multifieldqa_en_${mode}.jsonl" "qasper_${mode}.jsonl" "2wikimqa_${mode}.jsonl")
     for file_name in "${file_name_list[@]}"; do
         eval_dataset_name=$(echo "$file_name" | cut -d'_' -f1)
         cot_mode=$(echo "$file_name" | grep -q "nocot" && echo "nocot" || echo "cot") # this is a trick in bash to implement in-line if-else using && and ||

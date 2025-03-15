@@ -1,4 +1,7 @@
 dataset/
 data/
 saves/
-
+evaltoolkits/pred*/
+**__pycache__/
+evaltoolkits/filter_data.py
+log/

@@ -24,7 +24,7 @@ def parse_args(args=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--path_to_src_file', type=str, default=None)
     parser.add_argument('--path_to_stage1_file', type=str, default=None)
-    parser.add_argument('--sample_num', type=int, default=30)
+    parser.add_argument('--sample_num', type=int, default=None)
     return parser.parse_args(args)
 # 我们需要你帮忙评价模型推理过程的质量。模型的接收的输入是一段长文本，以及一个复杂的问题，它的任务是根据问题的需要，从长文本中检索出相关信息（以[Excerpt xxx]的形式开头，包含在``中），并给出正确的答案。现在，我们已经在上面给出了问题和模型的推理过程。模型最终得到的结果是正确的，但是我们需要你来评价模型的推理过程是否合理。请你根据以下几个方面来评价模型的推理过程：- 逻辑性：模型对问题的拆解应当合理。推理过程对于检索到的信息的使用应该符合逻辑，根据检索到的信息得出答案的逻辑链条应该合理。 - 完整性：推理过程应该主要使用从文中检索到的信息，即[Excerpts xxx]后内容，而非模型自身的知识。 - 简洁性：只应当检索回答问题相关的信息，不应罗列过多无关的信息。
 
@@ -180,7 +180,7 @@ def get_score_evidence(question:str, pred:str,ground_truth:str) -> Tuple[float, 
     prompt = EVAL_PROMPT.format(question=question, reasoning=pred)
     max_retries = 5
     API_KEY = os.getenv("OPENAI_API_KEY")
-    client = OpenAI(api_key=API_KEY,base_url="Your Model URL")
+    client = OpenAI(api_key=API_KEY,base_url="https://api.360.cn/v1")
     for _ in range(max_retries):
         content = ""
         try:

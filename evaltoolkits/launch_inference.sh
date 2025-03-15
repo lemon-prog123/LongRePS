@@ -17,7 +17,7 @@ else
     mode="predicted_answer"
     inference_mode=$(echo "$file_name" | grep -q "train" && echo "train" || echo "eval") # train (for sample data), eval (for evaluation)
     if [[ $inference_mode == "train" ]]; then
-        sample_num=30
+        sample_num=100
         thresh=1.0
         temperature=0.7
         filtered_filename="${model_name}_sample${sample_num}temp${temperature}thresh${thresh}.jsonl"
@@ -54,7 +54,7 @@ echo "Filtered filename: ${filtered_filename}"
 echo "Thresh: ${thresh}"
 
 #cp Qwen/Qwen2.5-7B-Instruct/tokenizer* ${model_path} #for Qwen Model
-cp /mnt/xiyu/Model/meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Model
+#cp /mnt/xiyu/Model/meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Model
 
 for gpu_id in 0 1 2 3 4 5 6 7; do
     CUDA_VISIBLE_DEVICES=${gpu_id} python -m vllm.entrypoints.openai.api_server \
