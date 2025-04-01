@@ -1,15 +1,15 @@
 
-model_name="Your Model Name"
-model_path="Your Model Path"
+model_name="Qwen2.5-32B-prm-sample30-checkstage3-epoch2"
+model_path="/mnt/xiyu/LongRePS/saves/Qwen2.5-32B/lora/Qwen2.5-32B-prm-checkstage3-epoch2"
 mode="cot"
 
 domain_list=("all")
 eval_data_dir="../dataset/longbenchv2"
-sample_num=100
-temperature=0.7
+sample_num=1
+temperature=0.0
 
-cp meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Models
-#cp Qwen/Qwen2.5-7B-Instruct/tokenizer* ${model_path}
+#cp /mnt/xiyu/Model/meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path} #for Llama Models
+#cp /mnt/xiyu/Model/Qwen/Qwen2.5-7B-Instruct/tokenizer* ${model_path}
 
 
 for gpu_id in 0 1 2 3 4 5 6 7; do
@@ -18,6 +18,7 @@ for gpu_id in 0 1 2 3 4 5 6 7; do
     --model ${model_path} \
     --tensor-parallel-size=1 \
     --trust-remote-code \
+    --dtype bfloat16 \
     --port 800${gpu_id} > ../log/vllm_${model_name}_gpu${gpu_id}.log 2>&1 &
 done
 sleep 30 # sleep 30s, wait for the servers to start

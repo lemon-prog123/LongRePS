@@ -11,10 +11,10 @@ def preprocess(model:str):
     with jsonlines.open(f"./data/{model}_warmup.jsonl", 'w') as writer:
         writer.write_all(warmup_data)
 
-    with jsonlines.open(f"./data/{model}_orm.jsonl", 'w') as writer:
+    with jsonlines.open(f"./data/musique-{model}_orm_train.jsonl", 'w') as writer:
         writer.write_all(orm_data)
 
-    with jsonlines.open(f"./data/{model}_prm.jsonl", 'w') as writer:
+    with jsonlines.open(f"./data/musique-{model}_prm_train.jsonl", 'w') as writer:
         writer.write_all(prm_data)
 
 

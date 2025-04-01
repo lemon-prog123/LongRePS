@@ -1,10 +1,10 @@
-model_path="Qwen/Qwen2.5-7B"
+model_path="../Model/Qwen/Qwen2.5-7B"
 template="qwen"
 learning_rate=1e-5
 dataset="Qwen-2.5-7B_warmup"
 echo "Dataname: ${dataset}"
 
-output_path="saves/Llama3.1-8B/full/${dataset}_train_lr${learning_rate}_maxlen16k_"$(date -d "+8 hours" +"%Y-%m-%d-%H-%M-%S")
+output_path="saves/Qwen2.5-7B/full/${dataset}_train_lr${learning_rate}_maxlen16k_"$(date -d "+8 hours" +"%Y-%m-%d-%H-%M-%S")
 mkdir -p ${output_path}
 
 llamafactory-cli train \

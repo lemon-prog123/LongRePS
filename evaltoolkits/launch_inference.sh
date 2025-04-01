@@ -17,7 +17,7 @@ else
     mode="predicted_answer"
     inference_mode=$(echo "$file_name" | grep -q "train" && echo "train" || echo "eval") # train (for sample data), eval (for evaluation)
     if [[ $inference_mode == "train" ]]; then
-        sample_num=100
+        sample_num=1
         thresh=1.0
         temperature=0.7
         filtered_filename="${model_name}_sample${sample_num}temp${temperature}thresh${thresh}.jsonl"

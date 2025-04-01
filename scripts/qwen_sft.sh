@@ -1,10 +1,10 @@
-model_path="Your Warm-up Model Path"
+model_path="/mnt/xiyu/LongRePS/saves/Qwen2.5-7B/full/Qwen-2.5-7B_warmup_train_lr1e-5_maxlen16k_2025-03-26-17-19-47/checkpoint-18"
 template="qwen"
 learning_rate=5e-6
-dataset="Qwen-2.5-7B_sft"
+dataset="Qwen-2.5-7B_sample100_thresh1.0_yarn_checkstage3_prm"
 echo "Dataname: ${dataset}"
 
-output_path="saves/Llama3.1-8B/full/${dataset}_train_lr${learning_rate}_maxlen16k_"$(date -d "+8 hours" +"%Y-%m-%d-%H-%M-%S")
+output_path="saves/Qwen2.5-7B/full/${dataset}_train_lr${learning_rate}_maxlen16k_"$(date -d "+8 hours" +"%Y-%m-%d-%H-%M-%S")
 mkdir -p ${output_path}
 
 llamafactory-cli train \

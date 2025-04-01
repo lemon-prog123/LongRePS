@@ -4,3 +4,6 @@ saves/
 evaltoolkits/pred*/
 **__pycache__/
 log/
+*.out
+**bak/
+**dev/

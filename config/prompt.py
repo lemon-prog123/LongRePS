@@ -96,3 +96,8 @@ Choices:
 
 Format your response as follows: "The correct answer is (insert answer here)".
 """
+
+prompt_cot="""Given a document and a question, answer concisely using a single phrase and provide a brief reasoning process. \n\nContext:{context}\n\n Now, answer the question based on the context as concisely as you can and give a reasoning paths, using a single phrase if possible. \n\nQuestion:{question}\n\n Format your response as:
+Answer: []
+Reasoning: []
+Ensure both sections are separated clearly for easy extraction."""

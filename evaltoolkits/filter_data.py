@@ -24,7 +24,7 @@ def parse_args(args=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--path_to_src_file', type=str, default=None)
     parser.add_argument('--path_to_stage1_file', type=str, default=None)
-    parser.add_argument('--sample_num', type=int, default=None)
+    parser.add_argument('--sample_num', type=int, default=30)
     return parser.parse_args(args)
 # 我们需要你帮忙评价模型推理过程的质量。模型的接收的输入是一段长文本，以及一个复杂的问题，它的任务是根据问题的需要，从长文本中检索出相关信息（以[Excerpt xxx]的形式开头，包含在``中），并给出正确的答案。现在，我们已经在上面给出了问题和模型的推理过程。模型最终得到的结果是正确的，但是我们需要你来评价模型的推理过程是否合理。请你根据以下几个方面来评价模型的推理过程：- 逻辑性：模型对问题的拆解应当合理。推理过程对于检索到的信息的使用应该符合逻辑，根据检索到的信息得出答案的逻辑链条应该合理。 - 完整性：推理过程应该主要使用从文中检索到的信息，即[Excerpts xxx]后内容，而非模型自身的知识。 - 简洁性：只应当检索回答问题相关的信息，不应罗列过多无关的信息。
 
@@ -109,6 +109,7 @@ def filter_stage_1(path_to_src_file: str, path_to_stage1_file: str, f1_score_thr
 
     with jsonlines.open(path_to_src_file) as fin:
         data_list = list(fin)
+    print("Sample Number ",sample)
     for data in data_list:
         data['pred']=data['pred'][:sample]
         data['f1_score_list']=data['f1_score_list'][:sample]
@@ -274,12 +275,10 @@ def filter_stage_3(path_to_stage2_file: str, path_to_stage3_file: str, llm_score
         writer.write_all(stage3_data_list)
     
     return
-#filter_stage_3("/mnt/xiyu/LongCOT/dataset/musique_v10-llamastage2_llama3.1_sample30temp0.7thresh1.0_factcheck_stage2.jsonl","/mnt/xiyu/LongCOT/dataset/musique_v10-llamastage2_llama3.1_sample30temp0.7thresh1.0_factcheck_stage3thresh=0.jsonl",0)
-
 
 args = parse_args()
-path_to_src_file = args.path_to_src_file #"/mnt/xiyu/LongCOT/evaltoolkits/pred_train/Llama3.1_sample100_temp0.7_thresh1.0_lr1e-5_epoch1_musique_v9_llamastage2/musique.temp0.7sample100.cot_eval.jsonl"
-path_to_stage1_file = args.path_to_stage1_file #"/mnt/xiyu/LongCOT/dataset/musique_v9-llamastage2_llama3.1_sample100temp0.7thresh1.0_factcheck_stage1.jsonl"
+path_to_src_file = args.path_to_src_file
+path_to_stage1_file = args.path_to_stage1_file
 sample=args.sample_num
 path_to_stage2_file = path_to_stage1_file.replace("stage1", "stage2")
 path_to_stage3_file = path_to_stage1_file.replace("stage1", "stage3")

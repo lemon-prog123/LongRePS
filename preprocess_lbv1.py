@@ -13,7 +13,7 @@ from tqdm import tqdm
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import Dataset, load_dataset
-from config.prompt import prompt_lbv1_cot,prompt_lbv1_nocot
+from config.prompt import prompt_lbv1_cot,prompt_lbv1_nocot,prompt_cot
 
 def construct_cot_nocot_split(split: str):
     data_list=load_dataset('THUDM/LongBench',split, split='test')

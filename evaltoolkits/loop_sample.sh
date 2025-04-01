@@ -1,5 +1,5 @@
 eval_model_list=(
-    "Llama-8B-warmup-lr1e-5-sample100-temp0.7-epoch1 ../saves/Llama3.1-8B/full/Llama-3.1-8B_warmup_train_lr1e-5_maxlen16k_2025-03-13-22-43-49/checkpoint-10 Llama-3.1-8B_prm_train.jsonl"
+    "Qwen-7B-Instruct-yarn-example /mnt/xiyu/Model/Qwen/Qwen2.5-7B-Instruct musique-Qwen-2.5-7B_prm_train.jsonl"
 )
 model_list=("${eval_model_list[@]}")
 

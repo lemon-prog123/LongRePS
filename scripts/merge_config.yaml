@@ -1,0 +1,9 @@
+model_name_or_path: /mnt/xiyu/LongRePS/saves/Qwen2.5-32B/lora/Qwen2.5-32B-warmup-epoch1
+adapter_name_or_path: /mnt/xiyu/LongRePS/saves/Qwen2.5-32B/lora/Qwen-2.5-32B_sample30_temp0.7_thresh1.0_checkstage3_prm_train_lr5e-5_maxlen16k_2025-03-30-17-41-39/checkpoint-88
+template: qwen
+finetuning_type: lora
+
+export_dir: /mnt/xiyu/LongRePS/saves/Qwen2.5-32B/lora/Qwen2.5-32B-prm-checkstage3-epoch2
+export_size: 2
+export_device: cpu
+export_legacy_format: false

@@ -1,35 +1,36 @@
-
-model_name="Qwen2.5-7B-Instruct"
-model_path="/mnt/xiyu/Model/Qwen/Qwen2.5-7B-Instruct"
+model_name="Qwen2.5-32B-prm-sample30-checkstage3-epoch2"
+model_path="/mnt/xiyu/LongRePS/saves/Qwen2.5-32B/lora/Qwen2.5-32B-prm-checkstage3-epoch2"
 #model_config="${model_root}/tokenizer*"
 #model_path="${model_root}/checkpoint-58"
 mode="cot"
 
+
 domain_list=("all")
-eval_data_dir="../dataset/longbenchv1"
+eval_data_dir="../dataset/longbenchv2"
 sample_num=1
 temperature=0.0
 
 
-#cp ${model_config} ${model_path}
-#cp /mnt/xiyu/Model/Qwen/Qwen2.5-7B-Instruct/tokenizer* ${model_path} #for Qwen Models
-#cp /mnt/xiyu/Model/meta-llama/Llama-3.1-8B-Instruct/tokenizer* ${model_path}
 
-
-for gpu_id in 0 1 2 3 4 5 6 7; do
-    CUDA_VISIBLE_DEVICES=${gpu_id} python -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m vllm.entrypoints.openai.api_server \
     --served-model-name ${model_name} \
     --model ${model_path} \
-    --tensor-parallel-size=1 \
-    --swap-space 32\
+    --tensor-parallel-size=4 \
     --trust-remote-code \
-    --port 800${gpu_id} > ../log/vllm_${model_name}_gpu${gpu_id}.log 2>&1 &
-done
+    --port 8000 > ../log/vllm_${model_name}_gpu0.log 2>&1 &
+
+CUDA_VISIBLE_DEVICES=4,5,6,7 python -m vllm.entrypoints.openai.api_server \
+    --served-model-name ${model_name} \
+    --model ${model_path} \
+    --tensor-parallel-size=4 \
+    --trust-remote-code \
+    --port 8001 > ../log/vllm_${model_name}_gpu1.log 2>&1 &
+
 sleep 30 # sleep 30s, wait for the servers to start
 
 
 for domain in "${domain_list[@]}"; do
-    file_name_list=( "musique_${mode}.jsonl" "hotpotqa_${mode}.jsonl" "multifieldqa_en_${mode}.jsonl" "qasper_${mode}.jsonl" "2wikimqa_${mode}.jsonl") #"musique_${mode}.jsonl"
+    file_name_list=("MQA_${mode}.jsonl" "SQA_${mode}.jsonl")
     for file_name in "${file_name_list[@]}"; do
         eval_dataset_name=$(echo "$file_name" | cut -d'_' -f1)
         cot_mode=$(echo "$file_name" | grep -q "nocot" && echo "nocot" || echo "cot") # this is a trick in bash to implement in-line if-else using && and ||
@@ -63,6 +64,7 @@ for domain in "${domain_list[@]}"; do
             --sample_num ${sample_num} \
             --dataset_name ${eval_dataset_name} \
             --temperature ${temperature} \
+            --world_size 2 \
             > ./inference2.out
 
         python step2_extract_preds_from_raw.py --path_to_src_file ${path_to_inference_output}

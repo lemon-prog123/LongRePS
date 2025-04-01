@@ -1,106 +1,99 @@
-1753796
-Failed loading 0 lines, total 150 lines loaded
-  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/19 [00:00<?, ?it/s]  0%|          | 0/18 [00:00<?, ?it/s]  0%|          | 0/18 [00:00<?, ?it/s]  6%|▌         | 1/18 [00:54<15:28, 54.63s/it]  5%|▌         | 1/19 [00:55<16:30, 55.04s/it]  6%|▌         | 1/18 [00:55<15:49, 55.85s/it]  5%|▌         | 1/19 [00:55<16:47, 55.97s/it]  5%|▌         | 1/19 [00:56<16:49, 56.10s/it] 11%|█         | 2/18 [00:56<06:18, 23.63s/it]  5%|▌         | 1/19 [00:56<17:02, 56.81s/it]  5%|▌         | 1/19 [00:57<17:10, 57.23s/it] 11%|█         | 2/19 [00:57<06:52, 24.24s/it] 11%|█         | 2/19 [00:58<06:56, 24.48s/it] 17%|█▋        | 3/18 [00:58<03:27, 13.83s/it] 11%|█         | 2/19 [00:58<06:57, 24.53s/it] 11%|█         | 2/19 [00:59<07:05, 25.06s/it] 11%|█         | 2/18 [00:59<06:41, 25.12s/it] 11%|█         | 2/19 [00:59<07:04, 24.99s/it] 17%|█▋        | 3/18 [01:01<03:36, 14.46s/it] 16%|█▌        | 3/19 [01:01<03:53, 14.61s/it] 16%|█▌        | 3/19 [01:02<03:56, 14.80s/it] 22%|██▏       | 4/18 [01:02<02:15,  9.69s/it] 16%|█▌        | 3/19 [01:02<04:02, 15.17s/it] 22%|██▏       | 4/18 [01:03<02:13,  9.55s/it] 28%|██▊       | 5/18 [01:03<01:27,  6.73s/it] 16%|█▌        | 3/19 [01:04<04:09, 15.62s/it] 21%|██        | 4/19 [01:04<02:30, 10.02s/it] 28%|██▊       | 5/18 [01:05<01:29,  6.87s/it] 21%|██        | 4/19 [01:05<02:33, 10.22s/it] 21%|██        | 4/19 [01:06<02:42, 10.84s/it] 33%|███▎      | 6/18 [01:06<01:06,  5.55s/it] 26%|██▋       | 5/19 [01:07<01:44,  7.49s/it] 39%|███▉      | 7/18 [01:07<00:45,  4.12s/it] 26%|██▋       | 5/19 [01:08<01:43,  7.37s/it] 33%|███▎      | 6/18 [01:08<01:06,  5.51s/it] 16%|█▌        | 3/19 [01:08<04:48, 18.05s/it] 26%|██▋       | 5/19 [01:08<01:49,  7.84s/it] 32%|███▏      | 6/19 [01:09<01:09,  5.33s/it] 39%|███▉      | 7/18 [01:09<00:46,  4.26s/it] 44%|████▍     | 8/18 [01:09<00:34,  3.45s/it] 32%|███▏      | 6/19 [01:10<01:14,  5.75s/it] 32%|███▏      | 6/19 [01:10<01:13,  5.64s/it]  5%|▌         | 1/19 [01:10<21:05, 70.31s/it] 50%|█████     | 9/18 [01:11<00:24,  2.73s/it] 44%|████▍     | 8/18 [01:11<00:33,  3.32s/it] 37%|███▋      | 7/19 [01:11<00:51,  4.29s/it] 21%|██        | 4/19 [01:11<03:01, 12.12s/it] 37%|███▋      | 7/19 [01:11<00:51,  4.33s/it] 37%|███▋      | 7/19 [01:12<00:55,  4.58s/it] 42%|████▏     | 8/19 [01:13<00:38,  3.47s/it] 50%|█████     | 9/18 [01:13<00:26,  2.95s/it] 26%|██▋       | 5/19 [01:13<01:57,  8.39s/it] 56%|█████▌    | 10/18 [01:13<00:21,  2.67s/it] 42%|████▏     | 8/19 [01:13<00:38,  3.54s/it] 42%|████▏     | 8/19 [01:14<00:41,  3.81s/it] 47%|████▋     | 9/19 [01:15<00:31,  3.12s/it] 32%|███▏      | 6/19 [01:16<01:23,  6.45s/it] 56%|█████▌    | 10/18 [01:16<00:23,  2.98s/it] 61%|██████    | 11/18 [01:16<00:18,  2.70s/it] 47%|████▋     | 9/19 [01:16<00:32,  3.25s/it] 61%|██████    | 11/18 [01:18<00:18,  2.58s/it] 53%|█████▎    | 10/19 [01:18<00:27,  3.08s/it] 21%|██        | 4/19 [01:18<03:52, 15.52s/it] 67%|██████▋   | 12/18 [01:19<00:16,  2.73s/it] 58%|█████▊    | 11/19 [01:21<00:24,  3.03s/it] 67%|██████▋   | 12/18 [01:21<00:16,  2.79s/it] 53%|█████▎    | 10/19 [01:22<00:37,  4.18s/it] 37%|███▋      | 7/19 [01:23<01:19,  6.66s/it] 72%|███████▏  | 13/18 [01:24<00:14,  2.84s/it] 63%|██████▎   | 12/19 [01:25<00:22,  3.26s/it] 58%|█████▊    | 11/19 [01:25<00:30,  3.81s/it] 42%|████▏     | 8/19 [01:25<00:58,  5.30s/it] 78%|███████▊  | 14/18 [01:25<00:09,  2.43s/it] 83%|████████▎ | 15/18 [01:27<00:06,  2.24s/it] 63%|██████▎   | 12/19 [01:27<00:23,  3.32s/it] 47%|████▋     | 9/19 [01:29<01:12,  7.23s/it] 68%|██████▊   | 13/19 [01:29<00:17,  2.90s/it] 89%|████████▉ | 16/18 [01:29<00:04,  2.27s/it] 94%|█████████▍| 17/18 [01:33<00:02,  2.54s/it] 72%|███████▏  | 13/18 [01:33<00:31,  6.31s/it] 78%|███████▊  | 14/18 [01:35<00:19,  4.88s/it]100%|██████████| 18/18 [01:36<00:00,  2.66s/it]100%|██████████| 18/18 [01:36<00:00,  5.34s/it]
-Process Process-7:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 26%|██▋       | 5/19 [01:36<03:47, 16.22s/it] 32%|███▏      | 6/19 [01:39<02:34, 11.88s/it] 68%|██████▊   | 13/19 [01:39<00:40,  6.67s/it] 83%|████████▎ | 15/18 [01:40<00:15,  5.09s/it] 37%|███▋      | 7/19 [01:41<01:42,  8.51s/it] 11%|█         | 2/19 [01:41<13:27, 47.52s/it] 74%|███████▎  | 14/19 [01:42<00:27,  5.46s/it] 47%|████▋     | 9/19 [01:42<01:29,  8.92s/it] 74%|███████▎  | 14/19 [01:42<00:29,  5.90s/it] 16%|█▌        | 3/19 [01:43<07:03, 26.50s/it] 42%|████▏     | 8/19 [01:43<01:12,  6.61s/it] 79%|███████▉  | 15/19 [01:45<00:19,  4.93s/it] 53%|█████▎    | 10/19 [01:46<01:31, 10.21s/it] 21%|██        | 4/19 [01:46<04:18, 17.24s/it] 84%|████████▍ | 16/19 [01:46<00:11,  3.90s/it] 47%|████▋     | 9/19 [01:46<00:55,  5.59s/it] 26%|██▋       | 5/19 [01:48<02:44, 11.74s/it] 89%|████████▉ | 17/19 [01:48<00:06,  3.28s/it] 58%|█████▊    | 11/19 [01:49<01:04,  8.10s/it] 53%|█████▎    | 10/19 [01:49<00:41,  4.66s/it] 79%|███████▉  | 15/19 [01:50<00:24,  6.19s/it] 32%|███▏      | 6/19 [01:50<01:51,  8.54s/it] 63%|██████▎   | 12/19 [01:51<00:43,  6.21s/it] 95%|█████████▍| 18/19 [01:51<00:03,  3.18s/it] 53%|█████▎    | 10/19 [01:51<01:20,  8.96s/it] 84%|████████▍ | 16/19 [01:52<00:14,  4.92s/it] 89%|████████▉ | 17/19 [01:53<00:07,  3.94s/it] 37%|███▋      | 7/19 [01:53<01:21,  6.76s/it]100%|██████████| 19/19 [01:54<00:00,  3.03s/it]100%|██████████| 19/19 [01:54<00:00,  6.02s/it]
-Process Process-1:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 58%|█████▊    | 11/19 [01:54<00:56,  7.07s/it] 58%|█████▊    | 11/19 [01:55<00:40,  5.09s/it] 42%|████▏     | 8/19 [01:57<01:03,  5.77s/it] 63%|██████▎   | 12/19 [01:57<00:28,  4.13s/it] 63%|██████▎   | 12/19 [01:57<00:41,  5.87s/it] 47%|████▋     | 9/19 [01:59<00:44,  4.50s/it] 68%|██████▊   | 13/19 [01:59<00:21,  3.54s/it] 53%|█████▎    | 10/19 [02:00<00:32,  3.66s/it] 68%|██████▊   | 13/19 [02:01<00:31,  5.17s/it] 74%|███████▎  | 14/19 [02:03<00:21,  4.27s/it] 58%|█████▊    | 11/19 [02:03<00:26,  3.35s/it] 95%|█████████▍| 18/19 [02:03<00:05,  5.71s/it]100%|██████████| 19/19 [02:04<00:00,  4.31s/it]100%|██████████| 19/19 [02:04<00:00,  6.56s/it]
-Process Process-3:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 63%|██████▎   | 12/19 [02:07<00:23,  3.40s/it] 89%|████████▉ | 16/18 [02:07<00:22, 11.45s/it] 79%|███████▉  | 15/19 [02:07<00:16,  4.16s/it] 84%|████████▍ | 16/19 [02:09<00:10,  3.55s/it] 68%|██████▊   | 13/19 [02:09<00:58,  9.81s/it] 68%|██████▊   | 13/19 [02:10<00:20,  3.38s/it] 94%|█████████▍| 17/18 [02:10<00:09,  9.02s/it] 89%|████████▉ | 17/19 [02:11<00:06,  3.10s/it]100%|██████████| 18/18 [02:11<00:00,  6.72s/it]100%|██████████| 18/18 [02:11<00:00,  7.33s/it]
-Process Process-8:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 74%|███████▎  | 14/19 [02:12<00:38,  7.62s/it] 95%|█████████▍| 18/19 [02:14<00:02,  2.95s/it] 79%|███████▉  | 15/19 [02:14<00:24,  6.12s/it]100%|██████████| 19/19 [02:17<00:00,  2.97s/it]100%|██████████| 19/19 [02:17<00:00,  7.21s/it]
-Process Process-4:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 74%|███████▎  | 14/19 [02:17<00:38,  7.73s/it] 84%|████████▍ | 16/19 [02:17<00:15,  5.08s/it] 89%|████████▉ | 17/19 [02:19<00:08,  4.23s/it] 79%|███████▉  | 15/19 [02:20<00:25,  6.28s/it] 84%|████████▍ | 16/19 [02:22<00:15,  5.19s/it] 89%|████████▉ | 17/19 [02:26<00:09,  4.75s/it] 74%|███████▎  | 14/19 [02:27<00:37,  7.42s/it] 95%|█████████▍| 18/19 [02:28<00:03,  3.92s/it] 79%|███████▉  | 15/19 [02:31<00:25,  6.40s/it]100%|██████████| 19/19 [02:31<00:00,  3.64s/it]100%|██████████| 19/19 [02:31<00:00,  7.97s/it]
-Process Process-6:
-Traceback (most recent call last):
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
-    dist.destroy_process_group()
-  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
-    assert pg is not None
-AssertionError
-Connection error.
- 95%|█████████▍| 18/19 [02:32<00:06,  6.78s/it] 84%|████████▍ | 16/19 [02:33<00:15,  5.23s/it] 89%|████████▉ | 17/19 [02:36<00:08,  4.42s/it]100%|██████████| 19/19 [02:36<00:00,  6.07s/it]100%|██████████| 19/19 [02:36<00:00,  8.25s/it]
+2058724
+Wold Size  8
+Failed loading 0 lines, total 200 lines loaded
+  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:01<00:39,  1.63s/it]  4%|▍         | 1/25 [00:02<01:05,  2.73s/it]  4%|▍         | 1/25 [00:02<01:10,  2.95s/it]  4%|▍         | 1/25 [00:03<01:24,  3.53s/it]  4%|▍         | 1/25 [00:03<01:28,  3.71s/it]  4%|▍         | 1/25 [00:03<01:35,  3.97s/it]  8%|▊         | 2/25 [00:04<00:49,  2.13s/it]  4%|▍         | 1/25 [00:05<02:01,  5.07s/it]  8%|▊         | 2/25 [00:05<01:02,  2.74s/it]  4%|▍         | 1/25 [00:06<02:25,  6.08s/it]  8%|▊         | 2/25 [00:06<01:09,  3.01s/it]  8%|▊         | 2/25 [00:06<01:08,  2.98s/it]  8%|▊         | 2/25 [00:06<01:12,  3.13s/it]  8%|▊         | 2/25 [00:06<01:09,  3.03s/it] 12%|█▏        | 3/25 [00:07<00:55,  2.51s/it] 12%|█▏        | 3/25 [00:07<00:48,  2.19s/it] 12%|█▏        | 3/25 [00:08<00:57,  2.63s/it] 12%|█▏        | 3/25 [00:08<01:02,  2.86s/it] 12%|█▏        | 3/25 [00:09<01:09,  3.14s/it] 16%|█▌        | 4/25 [00:09<00:51,  2.45s/it]  8%|▊         | 2/25 [00:09<01:49,  4.74s/it] 16%|█▌        | 4/25 [00:10<00:53,  2.53s/it] 12%|█▏        | 3/25 [00:10<01:19,  3.61s/it] 16%|█▌        | 4/25 [00:10<00:53,  2.53s/it] 16%|█▌        | 4/25 [00:10<00:54,  2.61s/it]  8%|▊         | 2/25 [00:11<02:04,  5.41s/it] 12%|█▏        | 3/25 [00:11<01:17,  3.53s/it] 20%|██        | 5/25 [00:11<00:47,  2.40s/it] 20%|██        | 5/25 [00:12<00:44,  2.24s/it] 16%|█▌        | 4/25 [00:13<01:17,  3.69s/it] 20%|██        | 5/25 [00:13<00:54,  2.70s/it] 20%|██        | 5/25 [00:14<00:58,  2.93s/it] 16%|█▌        | 4/25 [00:14<01:17,  3.68s/it] 24%|██▍       | 6/25 [00:14<00:49,  2.63s/it] 12%|█▏        | 3/25 [00:14<01:43,  4.70s/it] 16%|█▌        | 4/25 [00:15<01:18,  3.72s/it] 20%|██        | 5/25 [00:16<01:01,  3.09s/it] 24%|██▍       | 6/25 [00:16<00:51,  2.70s/it] 24%|██▍       | 6/25 [00:16<00:57,  3.00s/it] 24%|██▍       | 6/25 [00:17<00:55,  2.94s/it] 20%|██        | 5/25 [00:17<01:14,  3.73s/it] 28%|██▊       | 7/25 [00:17<00:48,  2.69s/it] 16%|█▌        | 4/25 [00:17<01:24,  4.04s/it] 20%|██        | 5/25 [00:18<01:10,  3.51s/it] 28%|██▊       | 7/25 [00:19<00:49,  2.73s/it] 24%|██▍       | 6/25 [00:19<01:00,  3.19s/it] 28%|██▊       | 7/25 [00:20<00:54,  3.02s/it] 24%|██▍       | 6/25 [00:20<01:04,  3.41s/it] 20%|██        | 5/25 [00:20<01:10,  3.52s/it] 28%|██▊       | 7/25 [00:21<00:59,  3.29s/it] 32%|███▏      | 8/25 [00:21<00:54,  3.22s/it] 24%|██▍       | 6/25 [00:22<01:06,  3.48s/it] 28%|██▊       | 7/25 [00:22<00:51,  2.86s/it] 28%|██▊       | 7/25 [00:22<00:56,  3.14s/it] 32%|███▏      | 8/25 [00:22<00:50,  2.95s/it] 24%|██▍       | 6/25 [00:23<01:02,  3.29s/it] 32%|███▏      | 8/25 [00:23<00:51,  3.00s/it] 28%|██▊       | 7/25 [00:23<00:51,  2.86s/it] 32%|███▏      | 8/25 [00:24<00:58,  3.43s/it] 32%|███▏      | 8/25 [00:24<00:45,  2.68s/it] 36%|███▌      | 9/25 [00:25<00:43,  2.74s/it] 32%|███▏      | 8/25 [00:25<00:49,  2.89s/it] 28%|██▊       | 7/25 [00:25<00:51,  2.84s/it] 36%|███▌      | 9/25 [00:25<00:45,  2.82s/it] 36%|███▌      | 9/25 [00:26<00:56,  3.54s/it] 32%|███▏      | 8/25 [00:26<00:48,  2.84s/it] 36%|███▌      | 9/25 [00:27<00:40,  2.56s/it] 36%|███▌      | 9/25 [00:27<00:52,  3.29s/it] 36%|███▌      | 9/25 [00:27<00:45,  2.83s/it] 32%|███▏      | 8/25 [00:27<00:44,  2.64s/it] 40%|████      | 10/25 [00:27<00:38,  2.55s/it] 40%|████      | 10/25 [00:27<00:44,  2.98s/it] 36%|███▌      | 9/25 [00:28<00:38,  2.44s/it] 40%|████      | 10/25 [00:29<00:48,  3.23s/it] 40%|████      | 10/25 [00:29<00:37,  2.51s/it] 40%|████      | 10/25 [00:29<00:45,  3.01s/it] 44%|████▍     | 11/25 [00:30<00:38,  2.76s/it] 44%|████▍     | 11/25 [00:30<00:36,  2.60s/it] 40%|████      | 10/25 [00:30<00:44,  2.99s/it] 40%|████      | 10/25 [00:31<00:41,  2.76s/it] 44%|████▍     | 11/25 [00:32<00:43,  3.08s/it] 48%|████▊     | 12/25 [00:32<00:33,  2.55s/it] 36%|███▌      | 9/25 [00:32<00:54,  3.38s/it] 48%|████▊     | 12/25 [00:32<00:32,  2.50s/it] 44%|████▍     | 11/25 [00:33<00:40,  2.92s/it] 44%|████▍     | 11/25 [00:33<00:42,  3.00s/it] 44%|████▍     | 11/25 [00:34<00:37,  2.67s/it] 52%|█████▏    | 13/25 [00:34<00:28,  2.34s/it] 48%|████▊     | 12/25 [00:34<00:37,  2.86s/it] 44%|████▍     | 11/25 [00:34<00:50,  3.57s/it] 40%|████      | 10/25 [00:34<00:44,  2.96s/it] 48%|████▊     | 12/25 [00:35<00:33,  2.61s/it] 48%|████▊     | 12/25 [00:36<00:33,  2.60s/it] 52%|█████▏    | 13/25 [00:36<00:34,  2.89s/it] 56%|█████▌    | 14/25 [00:37<00:27,  2.52s/it] 52%|█████▏    | 13/25 [00:37<00:34,  2.88s/it] 52%|█████▏    | 13/25 [00:37<00:28,  2.42s/it] 48%|████▊     | 12/25 [00:37<00:45,  3.53s/it] 44%|████▍     | 11/25 [00:38<00:46,  3.34s/it] 56%|█████▌    | 14/25 [00:38<00:29,  2.72s/it] 56%|█████▌    | 14/25 [00:39<00:27,  2.54s/it] 56%|█████▌    | 14/25 [00:40<00:27,  2.48s/it] 52%|█████▏    | 13/25 [00:40<00:35,  2.97s/it] 52%|█████▏    | 13/25 [00:40<00:38,  3.22s/it] 60%|██████    | 15/25 [00:40<00:27,  2.79s/it] 48%|████▊     | 12/25 [00:41<00:59,  4.58s/it] 60%|██████    | 15/25 [00:41<00:26,  2.60s/it] 60%|██████    | 15/25 [00:42<00:25,  2.54s/it] 56%|█████▌    | 14/25 [00:42<00:33,  3.01s/it] 64%|██████▍   | 16/25 [00:43<00:24,  2.73s/it] 60%|██████    | 15/25 [00:43<00:32,  3.22s/it] 52%|█████▏    | 13/25 [00:43<00:45,  3.82s/it] 56%|█████▌    | 14/25 [00:43<00:34,  3.14s/it] 64%|██████▍   | 16/25 [00:44<00:23,  2.60s/it] 68%|██████▊   | 17/25 [00:45<00:21,  2.72s/it] 48%|████▊     | 12/25 [00:46<00:59,  4.56s/it] 60%|██████    | 15/25 [00:46<00:30,  3.07s/it] 64%|██████▍   | 16/25 [00:46<00:29,  3.33s/it] 68%|██████▊   | 17/25 [00:46<00:20,  2.52s/it] 60%|██████    | 15/25 [00:47<00:31,  3.18s/it] 56%|█████▌    | 14/25 [00:47<00:43,  3.93s/it] 64%|██████▍   | 16/25 [00:47<00:29,  3.30s/it] 64%|██████▍   | 16/25 [00:48<00:25,  2.83s/it] 52%|█████▏    | 13/25 [00:48<00:48,  4.04s/it] 64%|██████▍   | 16/25 [00:49<00:25,  2.85s/it] 72%|███████▏  | 18/25 [00:49<00:17,  2.55s/it] 68%|██████▊   | 17/25 [00:50<00:19,  2.46s/it] 72%|███████▏  | 18/25 [00:50<00:22,  3.21s/it] 56%|█████▌    | 14/25 [00:50<00:36,  3.32s/it] 68%|██████▊   | 17/25 [00:50<00:27,  3.48s/it] 68%|██████▊   | 17/25 [00:50<00:25,  3.20s/it] 68%|██████▊   | 17/25 [00:51<00:21,  2.63s/it] 60%|██████    | 15/25 [00:51<00:38,  3.86s/it] 60%|██████    | 15/25 [00:52<00:29,  2.96s/it] 76%|███████▌  | 19/25 [00:52<00:16,  2.81s/it] 76%|███████▌  | 19/25 [00:53<00:19,  3.27s/it] 72%|███████▏  | 18/25 [00:53<00:19,  2.82s/it] 72%|███████▏  | 18/25 [00:54<00:18,  2.65s/it] 72%|███████▏  | 18/25 [00:54<00:24,  3.53s/it] 64%|██████▍   | 16/25 [00:54<00:23,  2.58s/it] 76%|███████▌  | 19/25 [00:56<00:17,  2.98s/it] 72%|███████▏  | 18/25 [00:56<00:26,  3.86s/it] 80%|████████  | 20/25 [00:56<00:15,  3.15s/it] 76%|███████▌  | 19/25 [00:56<00:16,  2.79s/it] 64%|██████▍   | 16/25 [00:56<00:37,  4.19s/it] 68%|██████▊   | 17/25 [00:56<00:20,  2.55s/it] 80%|████████  | 20/25 [00:57<00:16,  3.23s/it] 76%|███████▌  | 19/25 [00:57<00:18,  3.01s/it] 68%|██████▊   | 17/25 [00:58<00:29,  3.66s/it] 84%|████████▍ | 21/25 [00:59<00:11,  2.99s/it] 76%|███████▌  | 19/25 [00:59<00:21,  3.58s/it] 80%|████████  | 20/25 [00:59<00:15,  3.05s/it] 84%|████████▍ | 21/25 [00:59<00:11,  2.94s/it] 80%|████████  | 20/25 [00:59<00:14,  2.96s/it] 72%|███████▏  | 18/25 [01:00<00:21,  3.00s/it] 80%|████████  | 20/25 [01:01<00:15,  3.05s/it] 88%|████████▊ | 22/25 [01:01<00:08,  2.73s/it] 80%|████████  | 20/25 [01:01<00:15,  3.10s/it] 84%|████████▍ | 21/25 [01:02<00:12,  3.09s/it] 72%|███████▏  | 18/25 [01:02<00:25,  3.65s/it] 84%|████████▍ | 21/25 [01:02<00:11,  2.97s/it] 88%|████████▊ | 22/25 [01:03<00:09,  3.31s/it] 84%|████████▍ | 21/25 [01:04<00:12,  3.09s/it] 92%|█████████▏| 23/25 [01:04<00:05,  2.93s/it] 84%|████████▍ | 21/25 [01:04<00:13,  3.28s/it] 76%|███████▌  | 19/25 [01:05<00:19,  3.31s/it] 88%|████████▊ | 22/25 [01:05<00:08,  2.88s/it] 88%|████████▊ | 22/25 [01:05<00:09,  3.15s/it] 76%|███████▌  | 19/25 [01:06<00:22,  3.75s/it] 92%|█████████▏| 23/25 [01:06<00:06,  3.20s/it] 96%|█████████▌| 24/25 [01:07<00:02,  2.84s/it] 88%|████████▊ | 22/25 [01:07<00:09,  3.21s/it] 96%|█████████▌| 24/25 [01:07<00:02,  2.67s/it] 88%|████████▊ | 22/25 [01:07<00:09,  3.29s/it] 92%|█████████▏| 23/25 [01:08<00:05,  2.85s/it] 92%|█████████▏| 23/25 [01:08<00:06,  3.17s/it]100%|██████████| 25/25 [01:09<00:00,  2.59s/it]100%|██████████| 25/25 [01:09<00:00,  2.77s/it]
 Process Process-2:
 Traceback (most recent call last):
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
     self.run()
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
     self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
     dist.destroy_process_group()
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
     assert pg is not None
 AssertionError
-Connection error.
- 95%|█████████▍| 18/19 [02:39<00:03,  3.98s/it]100%|██████████| 19/19 [02:43<00:00,  4.03s/it]100%|██████████| 19/19 [02:43<00:00,  8.60s/it]
+ 80%|████████  | 20/25 [01:09<00:17,  3.53s/it] 92%|█████████▏| 23/25 [01:10<00:05,  2.95s/it] 80%|████████  | 20/25 [01:10<00:20,  4.04s/it] 96%|█████████▌| 24/25 [01:12<00:03,  3.24s/it] 84%|████████▍ | 21/25 [01:12<00:13,  3.37s/it] 96%|█████████▌| 24/25 [01:12<00:03,  3.25s/it] 96%|█████████▌| 24/25 [01:12<00:02,  2.88s/it]100%|██████████| 25/25 [01:13<00:00,  3.47s/it]100%|██████████| 25/25 [01:13<00:00,  2.93s/it]
 Process Process-5:
 Traceback (most recent call last):
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
     self.run()
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
     self._target(*self._args, **self._kwargs)
-  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 144, in get_pred_from_vllm
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
     dist.destroy_process_group()
   File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
     assert pg is not None
 AssertionError
-Connection error.
+ 92%|█████████▏| 23/25 [01:14<00:08,  4.13s/it] 84%|████████▍ | 21/25 [01:14<00:15,  3.88s/it]100%|██████████| 25/25 [01:14<00:00,  2.61s/it]100%|██████████| 25/25 [01:14<00:00,  3.00s/it]
+Process Process-7:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError
+100%|██████████| 25/25 [01:15<00:00,  3.19s/it]100%|██████████| 25/25 [01:15<00:00,  3.02s/it]
+Process Process-4:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError
+ 88%|████████▊ | 22/25 [01:15<00:09,  3.29s/it] 96%|█████████▌| 24/25 [01:16<00:03,  3.62s/it]100%|██████████| 25/25 [01:17<00:00,  3.78s/it]100%|██████████| 25/25 [01:17<00:00,  3.09s/it]
+Process Process-3:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError
+ 88%|████████▊ | 22/25 [01:17<00:11,  3.69s/it] 92%|█████████▏| 23/25 [01:18<00:06,  3.13s/it]100%|██████████| 25/25 [01:20<00:00,  3.60s/it]100%|██████████| 25/25 [01:20<00:00,  3.20s/it]
+Process Process-1:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError
+ 96%|█████████▌| 24/25 [01:20<00:02,  2.73s/it] 92%|█████████▏| 23/25 [01:20<00:06,  3.37s/it]100%|██████████| 25/25 [01:21<00:00,  2.48s/it]100%|██████████| 25/25 [01:21<00:00,  3.28s/it]
+Process Process-8:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError
+ 96%|█████████▌| 24/25 [01:23<00:03,  3.39s/it]100%|██████████| 25/25 [01:25<00:00,  2.96s/it]100%|██████████| 25/25 [01:25<00:00,  3.43s/it]
+Process Process-6:
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/xiyu/LongRePS/evaltoolkits/step1_eval_inference.py", line 167, in get_pred_from_vllm
+    dist.destroy_process_group()
+  File "/home/azureuser/miniconda3/envs/longreps/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1721, in destroy_process_group
+    assert pg is not None
+AssertionError

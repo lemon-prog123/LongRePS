@@ -39,6 +39,7 @@ def parse_args(args=None):
     parser.add_argument('--output_path', type=str, default=None)
     parser.add_argument('--dataset_name', type=str, default=None)
     parser.add_argument('--sample_num', type=int, default=30)
+    parser.add_argument('--world_size', type=int, default=8)
     parser.add_argument('--max_gen', type=int, default=512)
     parser.add_argument('--gpt', action='store_true', help="Evaluate on test mode")
     parser.add_argument('--temperature', type=float, default=0)
@@ -54,13 +55,35 @@ def get_api_results(model_name, prompt, gpu_id, sample_num, max_gen, temp,gpt=Fa
             client = OpenAI(api_key=api_key, base_url="Your Online Model URL")
         else:
             client = OpenAI(api_key="EMPTY", base_url=f"http://localhost:800{gpu_id}/v1")
-        try: 
+        try:
+            '''
+            response=client.completions.create(
+                prompt=prompt,
+                #messages=[
+                #    {"role":"system", "content": "You are a helpful assistant."},
+                #    {"role": "user","content": prompt}
+                #],
+                model=model_name,
+                temperature=temp,
+                n=sample_num,
+                stop=["}"],
+                max_tokens=max_gen,
+                # extra_body={"guided_json": json_schema},
+            )
+            
+            for choice in response.choices:
+                #response_list.append(choice.message.content)
+                response_list.append(choice.text)
+            return response_list
+            '''
+            
             response=client.chat.completions.create(
                 #prompt=prompt,
                 messages=[
                     {"role":"system", "content": "You are a helpful assistant."},
                     {"role": "user","content": prompt}
                 ],
+                #stop=["}","."],
                 model=model_name,
                 temperature=temp,
                 n=sample_num,
@@ -148,7 +171,8 @@ if __name__ == '__main__':
     print(os.getpid())
     seed_everything(42)
     args = parse_args()
-    world_size = torch.cuda.device_count()
+    world_size = args.world_size #torch.cuda.device_count()
+    print("Wold Size ",world_size)
     mp.set_start_method('fork', force=True)
     model_name = args.model
     dataset_name = args.dataset_name

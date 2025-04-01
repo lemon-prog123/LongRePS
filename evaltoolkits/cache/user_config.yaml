@@ -1,0 +1,5 @@
+cache_dir: null
+lang: zh
+last_model: Qwen2.5-14B
+path_dict:
+  Qwen2.5-14B: /mnt/xiyu/Model/Qwen/Qwen2.5-14B
